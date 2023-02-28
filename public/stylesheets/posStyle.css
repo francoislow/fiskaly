@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+}
+a {
+	color: #00B7FF;
+}
+
+#oliverpos_logo{
+	width: 100px;
+	cursor: pointer;
+	border: none;
+	margin-left: 15px;
+}
+
+#side_logo{
+	position: absolute;
+	left: -50px;
+	bottom:-50px;
+	opacity: 0.2;
+}
+
+body{
+	height: 100vh;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	color: #3D4C66;
+	background-color: #F0F2F4;
+	display: flex;
+    		flex-direction: column;
+    		flex-wrap: nowrap;
+    		justify-content: center;
+    		align-items: center;
+    		align-content: center;
+
+}
+
+h3{
+	padding-bottom: 32px;
+}
+
+#ologo{
+	padding-bottom: 32px;
+}
+#statusMsg{
+    color: rgb(185, 25, 25);
+}
+
+#printBtn {
+  display: none;
+}
+
+

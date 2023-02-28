@@ -1,0 +1,76 @@
+*{
+    font-family: 'Poppins';
+}
+
+.exportSpan label{
+    display: block;
+    font-size: 12px;
+}
+
+.exportSpan{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.exportSpan input{
+    width: 550px;
+    height: 30px;
+    border: 1px solid #ddd;
+}
+
+#this_export button{
+    width: 277px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px;
+    border-radius: 4px;
+    
+}
+
+#export_list{
+    background-color: #f3cfcf;
+}
+
+#tar{
+    background-color: #d4cef7 ;
+}
+
+#this_export{
+    margin-top: 10px;
+}
+
+#rectangle{
+    border: 1px solid rgb(187, 187, 187);
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    height: 798px;
+}
+
+#metadata{
+    margin-left: 10px;
+}
+
+.metadataSpan{
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.metadataSpan label{
+    display: block;
+}
+
+.metadataSpan input{
+    height: 30px;
+    width: 240px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#appName{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 50px 10px 50px;
+}

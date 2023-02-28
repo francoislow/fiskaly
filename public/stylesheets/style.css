@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+label{
+	color: #646C9A	
+}
+
+h1{
+    margin: 20px 50px 10px 50px;
+	font-weight: 400;
+}
+	
+h2{
+	font-weight: 400;
+}	
+
+
+#auth-msg, .error-msg{
+    color:rgb(204, 5, 5);
+}
+
+#side_logo{
+	width: 30%;
+}
+
+.app_container, .app_container-clients{
+    text-align: center;
+    margin: 0 50px 150px 50px;
+    border-color: #F0F2F4;
+    border-style: solid;
+	height: 650px;
+	overflow-y:auto;
+}
+
+.app_container-clients{
+	height: 700px;
+}
+
+
+img{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.credentials{
+    text-align: left;
+    margin-left: 10%;
+    
+}
+.api_credentials input{
+    width: 85%;
+    margin-bottom: 20px;
+}
+#disable-btn{
+    width: 15%;
+}
+
+.index_span{
+	display: inline-block;
+	width: 15%;
+    
+}
+.clients_span{
+	display: inline-block;
+	width: 34%;
+}
+
+#deregister-btn{
+    width: 15%;
+}
+#existingCredentials input{
+    background-color: rgb(228, 228, 228);
+    border-color: rgb(255, 255, 255);
+}
+#loadingspinner{
+    display: none;
+    width:18px;
+    height:18px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.login_details, .tss_details, .tss_clients_details, .tss_transactions_details, #transactions_json-response, #listExport_json-response{
+    text-align: left;
+    margin-left: 10%;
+}
+
+.tss_clients_details{
+	height: 150px;
+	overflow-y: auto;
+}
+
+.login_details input, .tss_details input, .tss_clients_details input, #transactions_json-response input, #listExport_json-response input{
+    width: 91.5%;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #E2E5EC;
+}
+.login_details label, .tss_details label, #transactions_json-response label, #listExport_json-response label{
+    color: #646C9A;
+}
+#signout-btn, #new-user-btn, #existing-user-btn, #remove_account-btn, #transaction_setting-btn, #client_setting-btn, #exports-btn ,#authAccount, #createTSS, #disableTSS, #tssClient, #createClient, #indexPage, #deregisterClient, #getTSSTransactions, #listExportsTSS, #retrieveTSS {
+    width: 18%;
+    background: #2797E8;
+    border-radius: 4px;
+    color: #FFFFFF;
+    line-height: 25px;
+}
+#remove_account-btn, #deregisterClient{
+    background:rgb(224, 68, 68);
+}
+
+#new-user-btn, #existing-user-btn{
+    border-color: #2797E8;
+}
+
+
+#signout-btn:hover, #new-user-btn:hover, #existing-user-btn:hover, #transaction_setting-btn:hover, #client_setting-btn:hover, #exports-btn:hover, #authAccount:hover, #createTSS:hover,  #disableTSS:hover, #tssClient:hover, #createClient:hover, #indexPage:hover, #getTSSTransactions:hover, #listExportsTSS:hover, #retrieveTSS:hover{
+    background: #117ecc;
+}
+#remove_account-btn:hover, #deregisterClient:hover{
+    background: rgb(218, 45, 45);
+}
+
+#tssIDs, #tssPIN, #outletNames{
+    width: 100%;
+    margin: 0 15px 0 0px;
+}
+
+#clientIDs, #registerIDs{
+    margin: 0 15px 0 0;
+}
+
+.tss_credentials{
+	height: 70px;
+	overflow-y: auto
+}
+
+#transactions_json-response, #listExport_json-response {
+	height: 1px;
+	width: 90%;
+}
+
+#queryTSS-form{
+	height: 0px;
+	width: 100%;
+}
+
+#errorMsg {
+    color: red;
+}
+
+
+
+
+ 

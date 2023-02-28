@@ -1,0 +1,83 @@
+*{
+    font-family: 'Poppins';
+}
+
+.exportSpan label{
+display: block;
+}
+
+.exportSpan input{
+margin-right: 10px;
+}
+
+.exportSpan{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#time_start, #time_end{
+    width: 100px;
+}
+
+#exportList{
+    margin-left: 10px;
+}
+
+#rectangle{
+    border: 1px solid rgb(187, 187, 187);
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 25px;
+}
+
+#appName{
+    margin-left: 10px;
+}
+
+#export_rectangle{
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 600px;
+    overflow-y: auto;
+}
+
+#triggerExport{
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+#rectangle p{
+    margin-left: 35px;
+}
+
+#exportList button{
+    border: 1px;
+    height: 30px;
+    border-radius:  4px;
+    background-color: #d4cef7;
+}
+
+#exportList input{
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#exportList label{
+    font-size: 12px;
+    color: #646C9A;
+}
+
+#triggerExport button{
+    border: 1px;
+    height: 30px;
+    border-radius:  4px;
+    background-color: #d4cef7;
+    margin-left: 0px;
+}
+
+#appName{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 50px 10px 50px;
+}

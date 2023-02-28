@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/manage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <title>Fiskaly</title>
+</head>
+
+<body>
+    <div id="app_container" class="standard_container">
+        <img id="side_logo" src="/fiskaly_logo.png">
+        <br>
+
+
+        </div>
+
+        <div id="tss_container" >
+            <h2>TSS Settings</h2>
+            <br>
+            <div id="create_tss_container">
+                <label>Set Outlet Name</label>
+                <input type="text" name="outlet_name" id="set_outlet">
+                <button type="button" class="button" onclick="createTSS()" id="createTSS_btn">
+                    <span class="button__text">Create TSS</span>
+                </button>
+
+            </div>
+            <br>
+            <div id="tss_list">
+                <h3>List of TSS(s)</h3>
+                <br>
+                <!-- <div id="tss_obj1">
+                    <div class="tss_list_attr">
+                        <label>TSS ID</label>
+                        <br>
+                        <input type="text" name="tss_id_1" value="30b85bc0-a0dc-4017-8dde-001185ac59fe">
+                    </div>
+                    <div class="tss_list_attr">
+                        <label>Outlet</label>
+                        <br>
+                        <input type="text" name="outlet_name_1" value="Village mall">
+                    </div>
+                    <button>Disable</button>
+                    <button>Client settings</button>
+                </div> -->
+
+
+            </div>
+
+        </div>
+
+        
+    </div>
+		
+    <script src="/js/manage.js"></script>
+
+</body>
+</html>

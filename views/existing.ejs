@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Fiskaly</title>
+</head>
+
+<body>
+
+    <h1>Fiskaly</h1>
+    <div class="app_container">
+        <img src="/fiskaly_logo.png" alt="fiskaly_logo">
+
+        <div class="credentials">
+            
+            <div class="api_credentials">
+                <form method="POST" action="/manage/setup/disableTSS">
+                    <label for="apiKey">API Key</label>
+                    <br>
+                    <input type="text" id="apiKey" name="apiKey" value="<%= api_key %>" readonly>
+                    <br>
+                    <label for="apiSecret">API Secret</label>
+                    <br>
+                    <input type="text" id="apiSecret" name="apiSecret" value="<%= api_secret %>" readonly>
+                    <br>
+                    <label for="adminPUK">Admin PUK</label>
+                    <br>
+                    <input type="text" id="adminPUK" name="adminPUK" value="<%= admin_puk %>" readonly>
+                    <br>
+                    <label for="tssID">TSS ID</label>
+                    <br>
+                    <input type="text" id="tssID" name="tssID" value="<%= tss_id %>" readonly>
+                    <br>
+                    <input id="disable-btn" type="submit" value="Disable TSS">
+                </form>
+            </div>
+            
+            <div id="tokenBox">
+                <p>Fiskaly Response: <%= resMsg %></p>
+            </div>
+          
+            <% if (clientList.length > 0){ %>
+                <div class="client_credentials">
+
+                    <h2>Client(s)</h2>
+                    <br> 
+                    <% for (var i = 0; i < clientList.length; i++){ %>
+                        <form action="/manage/setup/client/deregister">
+                            <span>
+                                <label for="clientID">Client ID</label>
+                                <br>
+                                <input type="text" name="clientID" id="clientID" value="<%= clientList[i]._id %>">         
+                            </span>
+                            <span>
+                                <label for="clientSerial">Client Serial No.</label>
+                                <br>
+                                <input type="text" name="clientSerial" id="clientSerial" value="<%= clientList[i].serial_number %>">
+                            </span>
+                            <input id="deregister-btn" type="submit" value="Deregister">
+                        </form>
+                        
+                    <% } %>
+                    <button>Create New Client</button>
+
+                </div>
+            <% } %>
+
+        </div>
+    </div>
+    
+    
+    <script src="/js/client.js"></script>
+
+</body>
+</html>

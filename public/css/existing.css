@@ -1,0 +1,186 @@
+.clientInput{
+    height: 35px;
+    width: 500px;
+    margin-left: 10px;
+    position: relative;
+}
+.clientSpan{
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.clientSpan label{
+    display: block;
+    font-size: 12px;
+}
+
+.clientSpan input{
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+}
+
+*{
+    font-family: 'Poppins';
+}
+
+.clientButtons{
+    margin-left: 10px;
+    width: 600px;
+    margin-bottom: 25px;
+    border: 1px;
+    
+}
+
+#retrieve_client{
+    border: 1px;
+    height: 30px;
+    border-radius:  4px;
+    background-color: #d4cef7;
+    margin-left: 10px;
+
+}
+
+.clientButtons button{
+    border: 1px;
+    border-radius: 4px;
+    margin-top: 25px;
+    width: 170px;
+    height: 35px;
+    background-color: rgb(196, 172, 252);
+}
+
+.metaInput{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.metaInput label{
+    display: block;
+    font-size: 12px;
+}
+
+.metaInput input{
+    margin-right: 20px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 4px;
+    height: 35px;
+}
+
+#appTitle{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 50px 10px 50px;
+}
+
+#update_metadata{
+    margin-left: 15px;
+    background-color: rgb(196, 172, 252);
+    border: 1px;
+    border-radius: 4px;
+    height: 35px;
+}
+
+.transactionspan{
+    display: inline-block;
+}
+.transactionspan label{
+    display: block;
+    font-size: 12px;
+}
+.transactionspan input{
+    width: 110px;
+    border: 1px solid rgb(199, 199, 199);
+    height: 25px;
+}
+
+#txn_div{
+    margin-left:10px;
+    margin-top: 25px;
+    border: 1px ;
+    height: 200px;
+    width: 550px;
+    overflow-y: auto;
+}
+
+#txn_div form{
+    margin-bottom: 10px;
+}
+
+#txn_div form button{
+    border: 1px;
+    height: 27px;
+}
+
+#transactionList{
+    margin-left: 10px;
+}
+
+#clientDetails{
+    /*margin-left:10px;
+    margin-top: 25px;
+    border: 1px ;
+    height: 200px;
+    width: 550px;
+    overflow-y: auto;
+    */
+}
+
+#client_details{
+    margin-left: 10px;
+}
+
+.thisclientSpan{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.thisclientSpan label{
+    display: block;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.thisclientSpan input{
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 4px;
+}
+
+#clientList{
+    margin: 25px;
+    overflow-y: auto;
+}
+
+#metadata{
+    margin-left: 10px;
+    margin-bottom:0px;
+}
+
+.metadataSpan{
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.metadataSpan label{
+    display: block;
+    font-size: 12px;
+}
+
+.metadataSpan input{
+    height: 30px;
+    width: 240px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#rectangle{
+    height: 800px;
+    width: 700px;
+    overflow-y: auto;
+    border: 1px solid lightgray;
+    margin: 25px;
+}

@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+label{
+	color: #646C9A	
+}
+
+h1{
+    margin: 20px 50px 10px 50px;
+	font-weight: 400;
+}
+	
+h2{
+	font-weight: 400;
+}	
+
+
+.app_container, .app_container{
+    text-align: center;
+    margin: 0 50px 150px 50px;
+    border-color: #F0F2F4;
+    border-style: solid;
+	height: 650px;
+	overflow-y:auto;
+}
+
+
+
+img{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 175px;
+}
+
+
+
+
+#errorMsg {
+    color: red;
+    font-size: small;
+}
+
+
+#signup_container {
+    text-align: left;
+    margin: 0 30% 0 40%;
+}
+
+button {
+    margin-top: 20px;
+}
+
+
+ 

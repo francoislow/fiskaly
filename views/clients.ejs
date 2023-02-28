@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/manage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <title>Fiskaly</title>
+</head>
+
+<body>
+    <button type="button" class="button" onclick="window.location.replace(window.location.origin + '/manage/dashboard');">
+        <span class="button__text">Back</span>
+    </button>
+    <div id="app_container" class="standard_container">
+        <img id="side_logo" src="/fiskaly_logo.png">
+        <br>
+        <h2><%= outlet %> (Client Settings)</h2>
+        </div>
+
+        <div id="client_container">
+            
+            <br>
+            <h4>Create Client</h4>
+            <hr>
+            <label>Register Name</label>
+            <br>
+            <select id="registerName">
+                <% for (let i = 0; i < clients_list.length; i++) { %>
+                <% if (clients_list[i].state == "REGISTERED") { %>
+                <option value="<%= clients_list[i].metadata.register_id %>" disabled><%= clients_list[i].metadata.register_name %></option>
+                <% } %>
+                <% } %>
+            </select>
+            <br>
+            <br>
+            <label>Register Serial Number</label>
+            <br>
+            <input type="text" id="registerSerialNum" placeholder="00001252884321">
+            <br>
+            <button type="button" class="button" onclick="createClient()" id="createClient_btn">
+                <span class="button__text">Create Client</span>
+            </button>
+            <br>
+            <p id="errorMsg"></p>
+            <br>
+            <br>
+            <div id="client_list">
+                <h4>List of Clients</h4>
+                <hr>
+                <br>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Register Name</th>
+                        <th>Serial Number</th>
+                        <th>State</th>
+                        <th>Action</th>
+                    </tr>
+                
+                <% for (let i = 0; i < clients_list.length; i++) { %>
+                    <tr>
+                        <td><%= clients_list[i]._id %></td>
+                        <td><%= clients_list[i].metadata.register_name %></td>
+                        <td><%= clients_list[i].serial_number %></td>
+                        <td><%= clients_list[i].state.toLowerCase() %></td>
+                        <% if (clients_list[i].state == "DEREGISTERED") { %>
+                        <td><button disabled>Deregister</button></td>
+                        <% } else { %> 
+                        <td>
+                            <button type="button" class="button" id="<%= clients_list[i]._id %>" name="<%= clients_list[i].serial_number %>" onclick="deregister(event)">Deregister</button>
+                        </td>
+                        <% } %> 
+
+                    </tr>
+                <% } %>
+                </table>
+                <br>
+                <p id="deregisterError"></p>
+            </div>
+
+            <div class="trans_container">
+                <h4>Transactions history</h4>
+                <hr>
+                <br>
+                <div>
+                    <select id="trans_dropdown" onchange="viewTrans()">
+                        <option disabled selected>Select Register</option>
+                        <% for (let i = 0; i < clients_list.length; i++) { %>            
+                        <option value="<%= clients_list[i]._id %>"><%= clients_list[i].metadata.register_name %></option>                              
+                        <% } %>
+                    </select>   
+                </div>
+
+                <table id="trans_history">
+                    <tr>
+                        <th>Trans Id.</th>
+                        <th>Time start.</th>
+                        <th>Time end.</th>
+                        <th>Revision</th>
+                        <th>Trans Amt.</th>
+                        <th>Tax Amt.</th>
+                    </tr>
+                </table>
+                <p id="fetchTransMsg"></p>
+        </div>
+
+        
+    </div>
+		
+    <script src="/js/manageClients.js"></script>
+
+</body>
+</html>

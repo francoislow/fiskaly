@@ -1,0 +1,47 @@
+.transactionspan{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.transactionspan label{
+    display: block;
+    font-size: 12px;
+}
+
+.transactionspan input{
+    width: 80px;
+    border: 1px solid lightgray;
+    height: 30px;
+}
+
+#retrieve_transaction{
+    border: 1px;
+    height: 30px;
+    background-color: #d4cef7;
+    border-radius: 4px;
+}
+
+#pageTitle{
+    margin-left: 10px;
+}
+
+#number{
+    width: 80px;
+}
+
+#rectangle{
+    margin: 25px;
+    border: 1px solid lightgray;
+    height: 800px;
+    width: 900px;
+}
+
+#transactionList{
+    overflow-y: auto;
+    height: 600px;
+    margin-left: 10px;
+}
+
+*{
+    font-family: 'Poppins';
+}
